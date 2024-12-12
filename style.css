@@ -1,0 +1,297 @@
+body {
+    background: rgb(2, 7, 27);
+    background: linear-gradient(-60deg, rgba(2, 7, 27, 1) 29%, rgba(61, 5, 70, 1) 72%, rgba(0, 116, 121, 1) 98%);
+    background-repeat: no-repeat;
+    background-size: 200% 200%; 
+    animation: gradientAnimation 7s ease infinite; 
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Animacja gradientu */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+
+
+/* Ciastko */
+#cookie {
+    /* wysokość */
+    height: 300px;
+    /* szerokość */
+    width: 300px;
+    /* zaokrąglenie rogów */
+    border-radius: 100%;
+    /* obramowanie */
+    border: 0px;
+    /* Opóźnienie animacji */
+    transition: 0.8s;
+}
+
+/* Margines napisu ciastek na sekundę */
+#cookies_on_sec,
+#cookies {
+    margin: 0;
+}
+
+/* Ciastko po najechaniu kursorem */
+#cookie:hover {
+    /* Zmiana wyglądu kursora */
+    cursor: pointer;
+    /* Przeskalowanie obiektu */
+    transform: scale(0.9);
+    /* Opóźnienie animacji */
+    transition: 0.8s;
+}
+
+/* Ciastko po kliknięciu */
+#cookie:active {
+    /* Przeskalowanie obiektu */
+    transform: scale(0.8);
+    /* Opóźnienie animacji */
+    transition: 0.1s;
+}
+
+/* Blok zawierający liczbę ciastek i ciastek na sekundę */
+header {
+    /* Cała linia dla jednego elementu */
+    clear: both;
+    /* Pozycja tekstu */
+    text-align: center;
+    /* Kolor tła */
+    background-color: rgb(0, 194, 0);
+    /* Zaokrąglenie rogów */
+    border-radius: 50px;
+    /* Opóźnienie animacji */
+    transition: 1s;
+    /* Wysokość */
+    height: 100px;
+    /* Wyśrodkowanie w pionie */
+    align-content: center;
+    /* Przeźroczystość */
+    opacity: 0.6;
+    /* Wielkość trzcionki */
+    font-size: 2em;
+}
+
+/* Animacja po najechaniu na dany element */
+header:hover, .upragde:hover {
+    /* Cień elementu */
+    box-shadow: inset 0px 0px 40px 10px aqua;
+    /* Opóźnienie animacji */
+    transition: 1s;
+    /* Przeźroczystość */
+    opacity: 1;
+}
+
+/* Animacja po najechaniu na footer */
+footer:hover {
+    /* Cień elementu */
+    box-shadow: inset 0px 0px 10px 5px aqua;
+    /* Opóźnienie animacji */
+    transition: 1s;
+    opacity: 1;
+}
+
+/* Bloka zawierający ciastko */
+.article {
+    /* Szerokość */
+    max-width: 50%;
+    min-width: 30%;
+    /* Wysokość */
+    height: 500px;
+    /* Umiejscowienie elementu */
+    float: left;
+    /* Umiejscowienie elementów w poziomie */
+    text-align: center;
+    /* Umiejscowienie elementów w pionie */
+    align-content: center;
+    /* Zaokrąglenie rogów */
+    border-radius: 1em;
+    /* Opóźnienie animacji */
+    transition: 1s;
+    margin: 2% 2% 2% 18%;
+    opacity: 0.6;
+}
+
+/* Blok zawierający ulepszenia */
+.aside {
+    /* Szerokośc */
+    max-width: 50%;
+    min-width: 30%;
+    margin: 2% 2% 2% 2%;
+    min-height: 500px;
+    /* Umiejscowienie elementu */
+    float: left;
+    /* Umiejscowienie tekstu w elemencie */
+    text-align: center;
+    /* Kolor tła */
+    /* background-color: rgb(198, 0, 198); */
+    /* Zaokrąglenie rogów */
+    border-radius: 1em;
+    /* Opóźnienie animacji */
+    transition: 1s;
+    /* Wyrównanie w pionie */
+    align-content: center;
+    /* Przeźroczystość */
+    opacity: 0.6;
+}
+
+/* Blok zawierający stopke */
+footer {
+    /* Cała linia dla jednego elementu */
+    clear: both;
+    /* Umiejscowienie tekstu */
+    text-align: center;
+    /* Kolor tła */
+    background-color: green;
+    /* Margines wewnętrzny */
+    padding: 10px;
+    /* Minimalna szerokość */
+    min-width: 250px;
+    /* Maksymalna szerokość */
+    max-width: 250px;
+    /* Zaokrąglenie rogów */
+    border-radius: 50px;
+    /* Marines zewnętrzny */
+    margin: 0 auto 0 auto;
+    /* Opóźnienie animacji */
+    transition: 1s;
+    opacity: 0.6;
+}
+
+/* Nazwa ulepszenia */
+.upragde_name {
+    /* Kolor tekstu */
+    color: rgb(227, 98, 166);
+    /* Kolor tła */
+    background-color: beige;
+    /* Element jest blokiem */
+    display: block;
+    /* Szerokość */
+    width: 150px;
+    /* Margines */
+    margin: 5% auto 0% auto;
+    /* Zaokrąglenie rogów */
+    border-radius: 50px;
+    /* Obramowanie wokół przycisku */
+    border-style: none;
+    /* Margines wewnętrzny */
+    padding: 2% 0% 2% 0%;
+    /* Opóźnienie animacji */
+    transition: 500ms;
+    font-weight: bold;
+}
+
+/* Nazwa ulepszenia po najechaniu kursorem */
+.upragde_name:hover {
+    /* Cień bloku */
+    box-shadow: inset 0px 0px 20px 2px gray;
+    /* Opóźnienie animacji */
+    transition: 750ms;
+    /* Wygląd kursora */
+    cursor: pointer;
+    transform: scale(130%);
+}
+
+/* Nazwa ulepszenia po kliknięciu */
+.upragde_name:active{
+    transform: scale(80%);
+}
+
+/* Opis ulepszenia */
+.upragde_description {
+    /* Kolor tekstu */
+    color: black;
+    /* Dolny margines */
+    margin-bottom: 20px;
+    /* Opóźnienie animacji */
+    transition: 0.5s;
+    /* Szerokość */
+    width: 70%;
+    /* Margines zewnętrzny */
+    margin: 1% auto 0% auto;
+    padding: 5px;
+}
+
+/* Opis ulepszenia po najechaniu myszką */
+.upragde_description:hover {
+    /* Kolor tła */
+    background-color: pink;
+    /* Opóźnienie animacji */
+    transition: 0.5s;
+    /* Zaokrąglenie rogów */
+    border-radius: 50px;
+    padding: 5px;
+}
+
+/* Cena ulepszenia */
+.prize {
+    /* Styl czcionki */
+    font-style: oblique;
+    /* Margines dolny ceny */
+    margin-bottom: 1px;
+    /* Opóźnienie animacji */
+    transition: 1s;
+    font-size: 130%;
+}
+
+/* alertBox po zakupie */
+#alertBox {
+    /* Widoczność */
+    visibility: hidden;
+    /* Nasycenie */
+    opacity: 0;
+    /* Opóźnienie animacji */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    /* Pozycja */
+    position: fixed;
+    /* Pozycja od górt */
+    top: 50%;
+    /* Pozycja od lewej */
+    left: 50%;
+    /* Rozmiaz X */
+    transform: translateX(-50%);
+    /* Margines wenwnętrzny */
+    padding: 20px;
+    /* Kolor tła */
+    background-color: yellow;
+    /* Kolor trzcionki */
+    color: black;
+    /* Zaokrąglenie rogów */
+    border-radius: 10px;    
+    /* Umiejscowienie tekstu */
+    text-align: center;
+    /* Wartstwa */
+    z-index: 1000;
+}
+
+#alertBox.visible {
+    /* Widoczność */
+    visibility: visible;
+    /* Nasycenie */
+    opacity: 1;
+}
+
+.upragde{
+    margin: 1% 1% 3% 1%;
+    border-radius: 1em;
+    opacity: 0.6;
+    transition: 1s;
+    background-color: rgb(125, 166, 255);
+}
+
+.upragde:hover{
+    transform: scale(110%);
+    transition: 1s;
+}

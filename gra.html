@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- System kodowania znaków -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nazwa strony -->
+    <title>Gra</title>
+    <!-- Podłączenie JavaScript -->
+    <script src="script.js"></script>
+    <!-- Podłączenie CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ojuju:wght@200..800&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nagłówek -->
+        <header>
+            <!-- Liczba ciastek -->
+            <p id="cookies"></p>
+            <!-- Liczba ciastek na sekundę -->
+            <p id="cookies_on_sec"><i class='icon-back-in-time'></i></p>
+        </header>
+        <div class="section">
+            <!-- Ciastko -->
+            <div class="article">
+                <img src="cookie.png" alt="Ciastko" id="cookie">
+            </div>
+            <!-- Ulepszenia -->
+            <div class="aside">
+                <div class="upragde">
+                    <!-- Nazwa ulepszenia -->
+                    <p><button onclick="more_cookie_click()" class="upragde_name">Wartość kliknięcia</button></p>
+                    <!-- Opis ulepszenia -->
+                    <p class="upragde_description">Zwiększona liczba ciastek na jedno kliknięcie</p>
+                    <!-- Cena ulepszenia -->
+                    <p class="prize" id="clickPrize"><i class="icon-dollar"></i></p>
+                </div>
+                <div class="upragde">
+                    <!-- Nazwa ulepszenia -->
+                    <p><button onclick="more_cookie_time()" class="upragde_name">Wypiekanie ciastek</button></p>
+                    <!-- Opis ulepszenia -->
+                    <p class="upragde_description">Zwiększona liczba ciastek <i class='icon-back-in-time'></i></p>
+                    <!-- Cena ulepszenia -->
+                    <p class="prize" id="timePrize"><i class="dolar-cion"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- Zastrzeżenie praw -->
+        <footer>
+            &copy Prawa zastrzeżone, autor: <b>Kaszoko</b>
+        </footer>
+        <div id="alertBox"></div>
+    </div>
+</body>
+
+</html>

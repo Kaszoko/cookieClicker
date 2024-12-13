@@ -1,24 +1,36 @@
 body {
+    /* Kolor tła */
     background: rgb(2, 7, 27);
+    /* Kolor tła w formie gradientu */
     background: linear-gradient(-60deg, rgba(2, 7, 27, 1) 29%, rgba(61, 5, 70, 1) 72%, rgba(0, 116, 121, 1) 98%);
+    /* Powtarzanie tła */
     background-repeat: no-repeat;
+    /* Wielkość tła */
     background-size: 200% 200%; 
+    /* Wywoałanie animacji */
     animation: gradientAnimation 7s ease infinite; 
+    /* Krój trzcionki */
     font-family: "Josefin Sans", sans-serif;
+    /* Automatyczny rozmiar trzcionki*/
     font-optical-sizing: auto;
+    /* Grubość trzcionki */
     font-weight: 700;
+    /* Styl trzcionki */
     font-style: normal;
 }
 
 /* Animacja gradientu */
 @keyframes gradientAnimation {
     0% {
+        /* Pozycja od początku do połowy */
         background-position: 0% 50%; 
     }
     50% {
+        /* Pozycja od połowy do końca */
         background-position: 100% 50%; 
     }
     100% {
+        /* Pozycja od końca do połowy i początku */
         background-position: 0% 50%; 
     }
 }
@@ -41,6 +53,7 @@ body {
 /* Margines napisu ciastek na sekundę */
 #cookies_on_sec,
 #cookies {
+    /* Margines zewnętrzny */
     margin: 0;
 }
 
@@ -52,6 +65,8 @@ body {
     transform: scale(0.9);
     /* Opóźnienie animacji */
     transition: 0.8s;
+    /* Filtr zwiększający jasność */
+    filter: brightness(1.3);
 }
 
 /* Ciastko po kliknięciu */
@@ -100,6 +115,7 @@ footer:hover {
     box-shadow: inset 0px 0px 10px 5px aqua;
     /* Opóźnienie animacji */
     transition: 1s;
+    /* Przeźroczystość */
     opacity: 1;
 }
 
@@ -107,6 +123,7 @@ footer:hover {
 .article {
     /* Szerokość */
     max-width: 50%;
+    /* Minimalna szerokość */
     min-width: 30%;
     /* Wysokość */
     height: 500px;
@@ -120,7 +137,9 @@ footer:hover {
     border-radius: 1em;
     /* Opóźnienie animacji */
     transition: 1s;
+    /* Margines zewnętrzny */
     margin: 2% 2% 2% 18%;
+    /* Przeźroczystość */
     opacity: 0.6;
 }
 
@@ -128,8 +147,11 @@ footer:hover {
 .aside {
     /* Szerokośc */
     max-width: 50%;
+    /* Minimalna szerokość */
     min-width: 30%;
+    /* Margines zewnętrzny */
     margin: 2% 2% 2% 2%;
+    /* Minimalna wysokość */
     min-height: 500px;
     /* Umiejscowienie elementu */
     float: left;
@@ -167,6 +189,7 @@ footer {
     margin: 0 auto 0 auto;
     /* Opóźnienie animacji */
     transition: 1s;
+    /* Przeźroczystość */
     opacity: 0.6;
 }
 
@@ -190,22 +213,25 @@ footer {
     padding: 2% 0% 2% 0%;
     /* Opóźnienie animacji */
     transition: 500ms;
+    /* Grubość trzcionki */
     font-weight: bold;
 }
 
 /* Nazwa ulepszenia po najechaniu kursorem */
 .upragde_name:hover {
     /* Cień bloku */
-    box-shadow: inset 0px 0px 20px 2px gray;
+    box-shadow: inset 0px 0px 6px 2px gray;
     /* Opóźnienie animacji */
     transition: 750ms;
     /* Wygląd kursora */
     cursor: pointer;
+    /* Powiększenie przycisku z nazwą ulepszenia */
     transform: scale(130%);
 }
 
 /* Nazwa ulepszenia po kliknięciu */
 .upragde_name:active{
+    /* Zmienjszenie przycisku z nazwą ulepszenia */
     transform: scale(80%);
 }
 
@@ -221,6 +247,7 @@ footer {
     width: 70%;
     /* Margines zewnętrzny */
     margin: 1% auto 0% auto;
+    /* Margines wewnętrzny */
     padding: 5px;
 }
 
@@ -232,6 +259,7 @@ footer {
     transition: 0.5s;
     /* Zaokrąglenie rogów */
     border-radius: 50px;
+    /* Margines wewnętrzny */
     padding: 5px;
 }
 
@@ -243,6 +271,7 @@ footer {
     margin-bottom: 1px;
     /* Opóźnienie animacji */
     transition: 1s;
+    /* Rozmiar trzcionki */
     font-size: 130%;
 }
 
@@ -283,15 +312,24 @@ footer {
     opacity: 1;
 }
 
+/* Okno z ulepszeniem */
 .upragde{
+    /* Margines zewnętrzny */
     margin: 1% 1% 3% 1%;
+    /* Zaogrąglenie rogów */
     border-radius: 1em;
+    /* Przeźroczystość */
     opacity: 0.6;
+    /* Opóźnienie animacji */
     transition: 1s;
-    background-color: rgb(125, 166, 255);
+    /* Kolor tła */
+    background-color: rgb(118, 234, 255);
 }
 
+/* Okno z ulepszeniem po najechaniu */
 .upragde:hover{
+    /* Powiększenie okna z ulepszeniem */
     transform: scale(110%);
+    /* Opóźnienie animacji */
     transition: 1s;
 }
